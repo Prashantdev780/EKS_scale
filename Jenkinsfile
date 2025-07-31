@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'CLUSTER_NAME', defaultValue: '', description: 'Name of the EKS Cluster')
-        string(name: 'NODEGROUP_NAME', defaultValue: '', description: 'Name of the EKS Node Group')
-        string(name: 'KEY1', defaultValue: '', description: 'First tag key')
-        string(name: 'VALUE1', defaultValue: '', description: 'First tag value')
-        string(name: 'KEY2', defaultValue: '', description: 'Second tag key')
-        string(name: 'VALUE2', defaultValue: '', description: 'Second tag value')
-        string(name: 'MIN_SIZE', defaultValue: '', description: 'New minimum size for Node Group')
-        string(name: 'DESIRED_SIZE', defaultValue: '', description: 'New desired size for Node Group')
+        string(name: 'CLUSTER_NAME',  description: 'Name of the EKS Cluster')
+        string(name: 'NODEGROUP_NAME', description: 'Name of the EKS Node Group')
+        string(name: 'KEY1', description: 'First tag key')
+        string(name: 'VALUE1', description: 'First tag value')
+        string(name: 'KEY2', description: 'Second tag key')
+        string(name: 'VALUE2', description: 'Second tag value')
+        string(name: 'MIN_SIZE', description: 'New minimum size for Node Group')
+        string(name: 'DESIRED_SIZE', description: 'New desired size for Node Group')
     }
 
     environment {
