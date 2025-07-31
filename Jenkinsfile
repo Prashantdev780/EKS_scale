@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'CLUSTER_NAME', defaultValue: 'test', description: 'Name of the EKS Cluster')
+        string(name: 'CLUSTER_NAME', description: 'Name of the EKS Cluster')
         string(name: 'NODEGROUP_NAME',defaultValue: 'test-ng', description: 'Name of the EKS Node Group')
         string(name: 'KEY1', description: 'First tag key')
         string(name: 'VALUE1', description: 'First tag value')
