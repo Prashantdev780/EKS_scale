@@ -20,7 +20,7 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/Prashantdev780/ASG_scale.git',
+                    url: 'https://github.com/Prashantdev780/EKS_scale.git',
                     credentialsId: 'git_cred'
             }
         }
