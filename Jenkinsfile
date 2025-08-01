@@ -41,7 +41,7 @@ pipeline {
                         --key2 ${params.KEY2} \
                         --value2 ${params.VALUE2} \
                         --min-size ${params.MIN_SIZE} \
-                        --desired-size ${params.DESIRED_SIZE}
+                        --desired-size ${params.DESIRED_CAPACITY}
                     """
                 }
             }
