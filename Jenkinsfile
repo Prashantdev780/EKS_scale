@@ -1,16 +1,16 @@
 pipeline {
     agent any
 
-    parameters {
-        string(name: 'CLUSTER_NAME', description: 'Name of the EKS Cluster')
-        string(name: 'NODEGROUP_NAME',defaultValue: 'test-ng', description: 'Name of the EKS Node Group')
-        string(name: 'KEY1', description: 'First tag key')
-        string(name: 'VALUE1', description: 'First tag value')
-        string(name: 'KEY2', description: 'Second tag key')
-        string(name: 'VALUE2', description: 'Second tag value')
-        string(name: 'MIN_SIZE', description: 'New minimum size for Node Group')
-        string(name: 'DESIRED_SIZE', description: 'New desired size for Node Group')
-    }
+    // parameters {
+    //     string(name: 'CLUSTER_NAME', description: 'Name of the EKS Cluster')
+    //     string(name: 'NODEGROUP_NAME',defaultValue: 'test-ng', description: 'Name of the EKS Node Group')
+    //     string(name: 'KEY1', description: 'First tag key')
+    //     string(name: 'VALUE1', description: 'First tag value')
+    //     string(name: 'KEY2', description: 'Second tag key')
+    //     string(name: 'VALUE2', description: 'Second tag value')
+    //     string(name: 'MIN_SIZE', description: 'New minimum size for Node Group')
+    //     string(name: 'DESIRED_SIZE', description: 'New desired size for Node Group')
+    // }
 
     environment {
         PYTHON_SCRIPT = 'eks_scale.py'
