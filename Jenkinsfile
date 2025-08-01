@@ -13,7 +13,7 @@ pipeline {
     // }
 
     environment {
-        PYTHON_SCRIPT = 'eks_scale.py'
+        PYTHON_SCRIPT = 'EKS_scale.py'
     }
 
     stages {
